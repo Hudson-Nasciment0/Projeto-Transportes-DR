@@ -3,3 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.img-slide {
+    width: 350px;
+}
+
+.img-footer {
+    width: 50px;
+}
