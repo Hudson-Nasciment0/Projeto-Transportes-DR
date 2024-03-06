@@ -1,7 +1,25 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+#img-logo {
+    width: 300px;
+margin-left: 2%;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 40px; 
+}
+
+h1 {
+    color: #DAA520;
+    margin-left: 5%;
 }
 
 .img-slide {
