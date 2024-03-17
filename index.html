@@ -1,55 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transportes</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
+    <title>Aluguel de Utilitários</title>
 
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
     <header>
         <img src="" alt="logo-empresa">
-        <h1>D&K transporte e logística</h1>
+        <h1>Transportes DR</h1>
+
     </header>
 
     <nav>
-        <a>Home</a>
-        <a>sobre</a>
-        <a>Localização</a>
-        <button>Fale Conosco</button>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+        </ul>
+
+        <button href="#fale-conosco" class="btn-fale-conosco">Fale conosco</button>
     </nav>
-    <Main>
-        <section>
-            <h1>Transportes com Qualidade se encontra aqui!</h1>
-            <img src="./img/Fiorino.jpg" alt="fiorino">
+    
+    <main>
+        <section id="home">
+            <h1>Aluguel de Utilitários</h1>
+            <div class="slideshow">
+                <img class="img-slide" src="./img/fiurino.jpeg" alt="Imagem 1">
+                <img class="img-slide" src="./img/fiurino-lateral-dir.jpeg" alt="Imagem 2">
+                <img class="img-slide" src="./img/fiurino-lateral-esq.jpeg" alt="Imagem 3">
+            </div>
         </section>
 
         <section>
             <h2>Quem Somos?</h2>
-
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro assumenda excepturi aspernatur nisi quas
                 atque voluptatibus veritatis amet laboriosam? Dolor nesciunt vero soluta maiores impedit temporibus
-                quibusdam quis veritatis doloremque?
-            </p>
-
+                quibusdam quis veritatis doloremque?</p>
             <img src="" alt="foto-proprietario">
         </section>
 
         <section>
             <h2>Venha nos Conhecer</h2>
-
             <iframe src="" frameborder="0"></iframe>
         </section>
     </Main>
-
     <footer>
         <a><img src="" alt="WhatsAPP"></a>
-
         <a><img src="" alt="Instagram"></a>
+    
     </footer>
 
-</body>
+    <div id="fale-conosco" class="modal">
+        <form action="enviar.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="fone">Telefone:</label>
+            <input type="tel" id="fone" name="fone" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 
+    <script src="scripts.js"></script>
+</body>
 </html>
